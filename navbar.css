@@ -14,7 +14,8 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -29,7 +30,11 @@ body {
 .nav a {
     text-decoration: none;
 }
-
+.nav hr{
+    margin: 1rem 1rem;
+    border: 1.5px solid #F7F6FB;
+    border-radius: 10px;
+}
 .header {
     width: 100%;
     height: var(--header-height);
@@ -153,7 +158,36 @@ body {
 }
 
 .height-100 {
-    height: 100vh
+    height: 100vh;
+}
+.map a{
+    color: black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.map a p{
+    margin: 0;
+    font-size: em;
+    font-weight: 600;
+
+}
+.map a i{
+    font-size: 2em;
+}
+.dashboard.height-100.bg-light.mt-5 {
+    margin-top: 6rem!important;
+}
+.dashboard hr{
+    background-color: #3A53A5;
+    opacity: 100%;
+    border-radius: 10px;
+    border: #3A53A5 solid .2em;
+}
+.upcoming-event-list{
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {
