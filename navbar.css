@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-
 :root {
     --header-height: 3rem;
     --nav-width: 68px;
     --first-color: #3A53A5;
     --first-color-light: #AFA5D9;
     --white-color: #F7F6FB;
-    --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
@@ -22,12 +19,11 @@ body {
     position: relative;
     margin: var(--header-height) 0 0 0;
     padding: 0 1rem;
-    font-family: var(--body-font);
+    font-family: 'Poppins', sans-serif !important;
     font-size: var(--normal-font-size);
     transition: .5s
 }
-
-.nav a {
+body a{
     text-decoration: none;
 }
 .nav hr{
@@ -68,7 +64,14 @@ body {
 .header_img img {
     width: 40px;
 }
-
+.icon-text{
+    color: black;
+}
+.icon-logo{
+    margin: .3rem;
+    font-size: 1.6rem;
+    color: var(--first-color);
+}
 .l-navbar {
     position: fixed;
     top: 0;
@@ -80,7 +83,9 @@ body {
     transition: .5s;
     z-index: var(--z-fixed)
 }
-
+.location-icon{
+    font-size: 1.3rem;
+}
 .nav {
     height: 100%;
     display: flex;
