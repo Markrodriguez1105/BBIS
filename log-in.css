@@ -17,7 +17,7 @@ h5{
     margin-bottom: 10px;
 }
 .logo{
-    width: 20%;
+    width: 15rem;
 }
 .login-section{
     display: flex;
@@ -30,7 +30,7 @@ h5{
     gap: 20px;
 }
 .login-form{
-    width: 30%;
+    width: 25rem;
 }
 form{
     display: flex;
@@ -94,10 +94,10 @@ form input:focus::placeholder{
         flex-direction: column;
     }
     .login-form{
-        width: 80%;
+        width: 25rem;
     }
     .logo{
-        width: 35%;
+        width: 10rem;
     }
     form label{
         font-size: .8rem;

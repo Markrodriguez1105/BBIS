@@ -14,8 +14,12 @@
 
 <body id="body-pd">
     <header class="header" id="header">
-        <div class="header_toggle">
+        <div class="header_toggle d-flex">
             <i class='bx bx-menu' id="header-toggle"></i>
+            <div class="d-flex align-content-center">
+                <a class="text-decoration-none" href="https://maps.app.goo.gl/wv4c82HHmaCHYGgq8" target="_blank"><i class='bx bx-map'></i>Barangay Bonifacio, San
+                    Fernando, Camarines Sur</a>
+            </div>
         </div>
         <div class="header_img"> <img src="images/365445071_2248707731993216_6634386383644775691_n.jpg" alt=""></div>
     </header>
@@ -76,15 +80,10 @@
     <!--Container Main start-->
     <div class="dashboard height-10 mt-4 p-4 pt-5">
         <h2>DASHBOARD</h2>
-        <hr class="">
-        <div class="map">
-            <a href="https://maps.app.goo.gl/6fAMcuEbvYfXdHC86" target="_blank"><i class='bx bx-map'></i>
-                <p>MAP</p><i class='bx bx-right-arrow-alt'></i>
-            </a></div>
         <hr>
         <div class="upcoming-event-container">
             <h3>Upcoming Event</h3>
-            <div class="upcoming-event-list row">
+            <div class="upcoming-event-list row overflow-auto flex-nowrap">
                 <div class="col">
                     <div class="description">
                         <h5>Event Title</h5>
@@ -92,7 +91,34 @@
                     </div>
                     <img src="images/Tree Planting.jpg" alt="tree Planting">
                 </div>
-                
+                <div class="col">
+                    <div class="description">
+                        <h5>Event Title</h5>
+                        <p class="date">01/01/2023</p>
+                    </div>
+                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                </div>
+                <div class="col">
+                    <div class="description">
+                        <h5>Event Title</h5>
+                        <p class="date">01/01/2023</p>
+                    </div>
+                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                </div>
+                <div class="col">
+                    <div class="description">
+                        <h5>Event Title</h5>
+                        <p class="date">01/01/2023</p>
+                    </div>
+                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                </div>
+                <div class="col">
+                    <div class="description">
+                        <h5>Event Title</h5>
+                        <p class="date">01/01/2023</p>
+                    </div>
+                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                </div>
             </div>
         </div>
         <hr>
@@ -100,28 +126,46 @@
         <div class="transaction-container">
             <table class="table table-striped">
                 <thead>
-                  <tr>
-                    <th scope="col">Transaction Type</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Payment</th>
-                    <th scope="col">Status</th>
-                  </tr>
+                    <tr>
+                        <th scope="col">Transaction Type</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Payment</th>
+                        <th scope="col">Status</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">Barangay Indigency</th>
-                    <td>01/01/2023</td>
-                    <td>₱150</td>
-                    <td>Pending</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Barangay Indigency</th>
-                    <td>02/02/2023</td>
-                    <td>₱150</td>
-                    <td>Claimed</td>
-                  </tr>
+                    <tr>
+                        <th scope="row">Barangay Indigency</th>
+                        <td>01/01/2023</td>
+                        <td>₱150</td>
+                        <td class="pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Barangay Indigency</th>
+                        <td>02/02/2023</td>
+                        <td>₱150</td>
+                        <td class="claimed">Claimed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Barangay Indigency</th>
+                        <td>02/02/2023</td>
+                        <td>₱150</td>
+                        <td class="claimed">Claimed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Barangay Indigency</th>
+                        <td>02/02/2023</td>
+                        <td>₱150</td>
+                        <td class="pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Barangay Indigency</th>
+                        <td>02/02/2023</td>
+                        <td>₱150</td>
+                        <td class="claimed">Claimed</td>
+                    </tr>
                 </tbody>
-              </table>
+            </table>
         </div>
 
     </div>

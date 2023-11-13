@@ -66,7 +66,7 @@ body {
 }
 
 .header_img img {
-    width: 40px
+    width: 40px;
 }
 
 .l-navbar {
@@ -188,6 +188,17 @@ body {
 }
 .upcoming-event-list{
     display: flex;
+}
+.claimed{
+    color: green;
+}
+.pending{
+    color: red;
+}
+.transaction-container{
+    height: 10rem;
+    overflow: auto;
+    flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 768px) {
