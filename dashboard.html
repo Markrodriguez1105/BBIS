@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="icon" href="images/image1.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -17,7 +18,10 @@
 
 <body id="body-pd">
     <header class="header" id="header">
-        <div class="w-100 d-flex align-items-center justify-content-end gap-5">
+        <div class="header_toggle d-flex">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+        <div class="w-50 d-flex align-items-center justify-content-between gap-5">
             <div class="w-100 d-flex align-content-center gap-4 justify-content-end">
                 <a class="d-flex align-items-center icon-text"
                     href="https://mail.google.com/mail/u/1/#inbox?compose=jrjtXDxrRmkcgTmqpQmzqqLbdbhvxZzkBRpznhpnWhHXZhfmbZNKDKSqWxjBrQFCBdvTjvjq"
@@ -27,8 +31,7 @@
                     target="_blank">
                     <i class="bx bxl-facebook-circle icon-logo"></i>Facebook</a>
             </div>
-            <div class="header_img">
-                <img src="images/365445071_2248707731993216_6634386383644775691_n.jpg" alt="">
+            <div class="header_img"> <img src="images/365445071_2248707731993216_6634386383644775691_n.jpg" alt="">
             </div>
         </div>
     </header>
@@ -36,7 +39,7 @@
         <nav class="nav">
             <div>
                 <div class="nav_logo-header">
-                    <img src="images/image1.png" alt="" style="width: 3rem; border-radius: 50%">
+                    <img src="images/image1.png" alt="">
                     <span class="nav_logo-name">Barangay Bonifacio</span>
                 </div>
                 <div class="nav_list">
@@ -65,119 +68,110 @@
                         <span class="nav_name">Clearance</span>
                     </a>
 
-                    <a href="certificate.html" class="nav_link">
-                        <i class='bx bx-edit'></i>
-                        <span class="nav_name">Certificates</span>
-                    </a>
-                    <hr>
-                    <a href="blotter.html" class="nav_link">
-                        <i class='bx bx-folder-open'></i>
-                        <span class="nav_name">Blotter</span>
-                    </a>
-
                     <a href="report.html" class="nav_link">
                         <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
                         <span class="nav_name">Reports</span>
                     </a>
+                    <hr>
+                    <a href="log-in.html" class="nav_link">
+                        <i class='bx bx-log-out nav_icon'></i>
+                        <span class="nav_name">Log Out</span> 
+                    </a>
                 </div>
             </div>
-            <a href="log-in.html" class="nav_link">
-                <i class='bx bx-log-out nav_icon'></i>
-                <span class="nav_name">Log Out</span> </a>
         </nav>
     </div>
     <!--Dashboard start-->
     <div class="dashboard height-10 mt-4 p-4 pt-5">
-        <h2>DASHBOARD</h2>
-        <hr>
+        <div class="header-main">
+            <hr>
+            <h2>Dashboard</h2>
+            <hr>
+        </div>
+        
         <div class="upcoming-event-container">
             <h3>Upcoming Event</h3>
-            <div class="upcoming-event-list row overflow-auto flex-nowrap">
-                <div class="col">
+            <div class="upcoming-event-list">
+                <div class="image-container">
                     <div class="description">
-                        <h5>Event Title</h5>
-                        <p class="date">01/01/2023</p>
+                        <h5>Tree Planting</h5>
+                        <p class="date">02/01/2024</p>
                     </div>
-                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                    <img src="images/TreePlanting.jpg" alt="tree Planting">
                 </div>
-                <div class="col">
+                <div class="image-container">
                     <div class="description">
-                        <h5>Event Title</h5>
-                        <p class="date">01/01/2023</p>
+                        <h5>Feeding Program</h5>
+                        <p class="date">03/23/2024</p>
                     </div>
-                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                    <img src="images/FeedingProgram.jpg" alt="tree Planting">
                 </div>
-                <div class="col">
+                <div class="image-container">
                     <div class="description">
-                        <h5>Event Title</h5>
-                        <p class="date">01/01/2023</p>
+                        <h5>Give Giving</h5>
+                        <p class="date">05/03/2024</p>
                     </div>
-                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                    <img src="images/GiftGiving.jpg" alt="tree Planting">
                 </div>
-                <div class="col">
+                <div class="image-container">
                     <div class="description">
-                        <h5>Event Title</h5>
-                        <p class="date">01/01/2023</p>
+                        <h5>Clean Up Drive</h5>
+                        <p class="date">05/20/2024</p>
                     </div>
-                    <img src="images/Tree Planting.jpg" alt="tree Planting">
-                </div>
-                <div class="col">
-                    <div class="description">
-                        <h5>Event Title</h5>
-                        <p class="date">01/01/2023</p>
-                    </div>
-                    <img src="images/Tree Planting.jpg" alt="tree Planting">
+                    <img src="images/CleanUpDrive.png" alt="tree Planting">
                 </div>
             </div>
         </div>
-        <hr>
-        <h3>Recent Transaction</h3>
         <div class="transaction-container">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Transaction Type</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Payment</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Barangay Indigency</th>
-                        <td>01/01/2023</td>
-                        <td>₱150</td>
-                        <td class="pending">Pending</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Barangay Indigency</th>
-                        <td>02/02/2023</td>
-                        <td>₱150</td>
-                        <td class="claimed">Claimed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Barangay Indigency</th>
-                        <td>02/02/2023</td>
-                        <td>₱150</td>
-                        <td class="claimed">Claimed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Barangay Indigency</th>
-                        <td>02/02/2023</td>
-                        <td>₱150</td>
-                        <td class="pending">Pending</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Barangay Indigency</th>
-                        <td>02/02/2023</td>
-                        <td>₱150</td>
-                        <td class="claimed">Claimed</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Recent Transaction</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Transaction Type</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Payment</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Barangay Indigency</th>
+                            <td>01/01/2023</td>
+                            <td>₱150</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Barangay Indigency</th>
+                            <td>02/02/2023</td>
+                            <td>₱150</td>
+                            <td class="claimed">Claimed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Barangay Indigency</th>
+                            <td>02/02/2023</td>
+                            <td>₱150</td>
+                            <td class="claimed">Claimed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Barangay Indigency</th>
+                            <td>02/02/2023</td>
+                            <td>₱150</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Barangay Indigency</th>
+                            <td>02/02/2023</td>
+                            <td>₱150</td>
+                            <td class="claimed">Claimed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </div>
     <!--Dashboard end-->
 </body>
+
 </html>
