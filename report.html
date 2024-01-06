@@ -64,28 +64,20 @@
 
                     <a href="clearance.html" class="nav_link">
                         <i class='bx bx-message-square-detail nav_icon'></i>
-                        <span class="nav_name">Clearance</span>
-                    </a>
-
-                    <a href="certificate.html" class="nav_link">
-                        <i class='bx bx-edit'></i>
-                        <span class="nav_name">Certificates</span>
-                    </a>
-                    <hr>
-                    <a href="blotter.html" class="nav_link">
-                        <i class='bx bx-folder-open'></i>
-                        <span class="nav_name">Blotter</span>
+                        <span class="nav_name">Request Document</span>
                     </a>
 
                     <a href="report.html" class="nav_link active">
                         <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
                         <span class="nav_name">Reports</span>
                     </a>
+                    <hr>
+                    <a href="log-in.html" class="nav_link">
+                        <i class='bx bx-log-out nav_icon'></i>
+                        <span class="nav_name">Log Out</span> 
+                    </a>
                 </div>
             </div>
-            <a href="log-in.html" class="nav_link">
-                <i class='bx bx-log-out nav_icon'></i>
-                <span class="nav_name">Log Out</span> </a>
         </nav>
     </div>
     <!--Container start-->
@@ -109,9 +101,10 @@
                     <label for="DocumentTypeReport" class="form-label">Report Type</label>
                     <select id="DocumentTypeReport" class="form-select" aria-label="Default select example" required>
                         <option disabled selected>Select Document Type</option>
-                        <option value="1">Permit</option>
-                        <option value="2">Clearance</option>
-                        <option value="3">Business Permit</option>
+                        <option value="1">Blotter</option>
+                        <option value="2">Infrastructural Report</option>
+                        <option value="3">Utility Report</option>
+                        <option value="4">Others</option>
                     </select>
                     <div class="invalid-feedback">Please select a document type</div>
                 </div>
@@ -141,7 +134,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button class="btn btn-success" type="submit">Submit form</button>
+                <button class="btn btn-success" type="submit">Submit</button>
             </div>
         </form>
     </div>
