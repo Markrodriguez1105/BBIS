@@ -4,6 +4,7 @@
         
 }
 body{
+    font-family: 'Poppins', sans-serif !important;
     display: flex;
     padding-top: 10vh;
     flex-direction: column;
