@@ -53,11 +53,6 @@ body a{
     font-size: 1.5rem;
     cursor: pointer
 }
-
-.header_img img{
-    width: 2rem;
-    border-radius: 50%;
-}
 .icon-text{
     color: black;
 }
@@ -137,6 +132,11 @@ body a{
 
 .nav_icon {
     font-size: 1.25rem
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .show {
