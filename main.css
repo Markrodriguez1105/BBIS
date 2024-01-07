@@ -245,6 +245,7 @@ body a {
         background-color: whitesmoke;
         padding: 70px;
         border-radius: 10px;
+        left: 750px;
         transform: translateX(-10%);
         display: flex;
         justify-content: center;
