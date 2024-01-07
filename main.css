@@ -1,9 +1,10 @@
 :root {
     --header-height: 3rem;
-    --nav-width: 16rem;
+    --nav-width: 4.2rem;
     --first-color: #3A53A5;
     --first-color-light: #AFA5D9;
     --white-color: #F7F6FB;
+    --bg-color: #F4F4F4;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
@@ -17,22 +18,21 @@
 
 body {
     position: relative;
+    background-color: var(--bg-color)!important;
     margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
     font-family: 'Poppins', sans-serif !important;
     font-size: var(--normal-font-size);
     transition: .5s
 }
-
-body a {
+body a{
     text-decoration: none;
 }
-
-.nav hr {
+.nav hr{
     margin: 1rem 1rem;
     border: 1.5px solid #F7F6FB;
     border-radius: 10px;
 }
-
 .header {
     width: 100%;
     height: var(--header-height);
@@ -43,10 +43,9 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color);
+    background-color: var(--bg-color)   ;
     z-index: var(--z-fixed);
-    transition: .5s;
-    transition: background-color 0.5s;
+    transition: .5s
 }
 
 .header_toggle {
@@ -54,22 +53,14 @@ body a {
     font-size: 1.5rem;
     cursor: pointer
 }
-
-.header_img img {
-    border-radius: 50%;
-    transition: none;
-}
-
-.icon-text {
+.icon-text{
     color: black;
 }
-
-.icon-logo {
+.icon-logo{
     margin: .3rem;
     font-size: 1.6rem;
     color: var(--first-color);
 }
-
 .l-navbar {
     position: fixed;
     top: 0;
@@ -81,11 +72,9 @@ body a {
     transition: .5s;
     z-index: var(--z-fixed)
 }
-
-.location-icon {
+.location-icon{
     font-size: 1.3rem;
 }
-
 .nav {
     height: 100%;
     display: flex;
@@ -94,15 +83,17 @@ body a {
     justify-content: space-between;
     overflow: hidden
 }
-
+.nav_logo-header img{
+    width: 2rem;
+    border-radius: 50%;
+}
 .nav_logo-header,
 .nav_link {
     display: grid;
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 2rem 1rem;
-    transition: none;
+    padding: .5rem 0 .5rem 1rem
 }
 
 .nav_logo,
@@ -111,7 +102,7 @@ body a {
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 0 1.5rem;
+    padding: .5rem 0 .5rem 1.5rem
 }
 
 .nav_logo {
@@ -143,12 +134,17 @@ body a {
     font-size: 1.25rem
 }
 
+.nav-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .show {
     left: 0
 }
 
 .body-pd {
-    padding-left: calc(var(--nav-width) + 1rem);
+    padding-left: calc(var(--nav-width) + 1rem)
 }
 
 .active {
@@ -168,53 +164,45 @@ body a {
     height: 100vh;
 }
 
-.dashboard.height-100.bg-light.mt-5 {
-    margin-top: 6rem !important;
+h2.no-span {
+    display: table;
+    font-weight: bold;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid rgb(0, 0, 0);
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 50%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
 }
-
-.dashboard hr {
-    background-color: #3A53A5;
-    opacity: 100%;
-    border-radius: 10px;
-    border: #3A53A5 solid .2em;
+#HeaderReport{
+    text-align: center;
 }
-
-.upcoming-event-list {
-    display: flex;
+#FormReport{
+    border: 1px;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
-
-.claimed {
-    color: green;
+#TextareaReport{
+    resize: none;
 }
-
-.pending {
-    color: red;
-}
-
-.transaction-container {
-    height: 10rem;
-    overflow: auto;
-    flex-wrap: nowrap;
-}
-
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
-        padding-left: calc(var(--nav-width) + 2rem)
+        padding-left: calc(var(--nav-width) + 2rem);
     }
 
     .header {
         height: calc(var(--header-height) + 1rem);
-        padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
-    }
-
-    .header_img {
-        width: 40px;
-        height: 40px
-    }
-
-    .header_img img {
-        width: 45px
+        padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
     }
 
     .l-navbar {
@@ -223,11 +211,10 @@ body a {
     }
 
     .show {
-        width: calc(var(--nav-width) + 180px)
+        width: calc(var(--nav-width) + 12rem);
     }
 
     .body-pd {
-        padding-left: calc(var(--nav-width) + 188px)
+        padding-left: calc(var(--nav-width) + 13rem);
     }
-
 }
