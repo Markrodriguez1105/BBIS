@@ -7,6 +7,7 @@
     <title>Request Document</title>
     <link rel="icon" href="images/image1.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="report.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -82,6 +83,55 @@
         </nav>
     </div>
     <!--Container start-->
+    <div class="mt-4 p-4 pt-5">
+        <div class="p-4">
+            <h2 class="no-span"><span>Request Document</span></h2>
+        </div>
+        <div id="HeaderReport" class="pt-3 pb-5">
+            <h4>Fill the form below and we will get back soon to you for more update.</h4>
+        </div>
+        <form id="FormReport" class="row needs-validation" novalidate>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="IputNameReport" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="IputNameReport" placeholder="Full Name" required>
+                    <div class="invalid-feedback">Please enter your name</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="DocumentTypeReport" class="form-label">Report Type</label>
+                    <select id="DocumentTypeReport" class="form-select" aria-label="Default select example" required>
+                        <option disabled selected>Select Document Type</option>
+                        <option value="1">Barangay Indigency</option>
+                        <option value="2">Barangay Clearance</option>
+                        <option value="3">Agricultural Permit</option>
+                        <option value="4">Business Permit</option>
+                        <option value="4">Others</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a document type</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="InputNumberReport" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="InputNumberReport" pattern="^(09|\+639)\d{9}$" placeholder="+63" required>
+                    <div class="invalid-feedback">Please enter your phone number</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="InputEmailReport" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmailReport" placeholder="name@example.com"
+                        required>
+                    <div class="invalid-feedback">Please enter your email</div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
     <!--Contanier end-->
 </body>
 <script>
@@ -121,6 +171,24 @@
         }
         linkColor.forEach(l => l.addEventListener('click', colorLink))
     });
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
 </script>
 
 </html>
