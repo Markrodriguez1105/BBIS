@@ -99,7 +99,7 @@ body a {
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 2rem 1rem
+    padding: .5rem 0 2rem 1rem;
 }
 
 .nav_logo,
@@ -108,11 +108,11 @@ body a {
     grid-template-columns: max-content max-content;
     align-items: center;
     column-gap: 1rem;
-    padding: .5rem 0 0 1.5rem
+    padding: .5rem 0 0 1.5rem;
 }
 
 .nav_logo {
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 .nav_logo-icon {
