@@ -1,0 +1,28 @@
+:root {
+    --header-height: 3rem;
+    --nav-width: 4.2rem;
+    --first-color: #3a53a5;
+    --first-color-light: #afa5d9;
+    --white-color: #f7f6fb;
+    --bg-color: #f4f4f4;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+}
+
+.section-container {
+    background: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.section-container .official img {
+    width: 15%;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.section-container .other-official {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
