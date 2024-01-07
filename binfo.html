@@ -72,7 +72,7 @@
                     <hr>
                     <a href="log-in.html" class="nav_link">
                         <i class='bx bx-log-out nav_icon'></i>
-                        <span class="nav_name">Log Out</span> 
+                        <span class="nav_name">Log Out</span>
                     </a>
                 </div>
                 <div class="header-user-img nav_logo-header">
@@ -83,38 +83,49 @@
         </nav>
     </div>
     <!--Container start-->
-    <div class="display-title">
-        <h1>Barangay Information</h1>
-    </div>
-    <div class="small-text">
-        <p>Barangay Bonifacio is located in San Fernando, Camarines Sur, Philippines. It is a government
-            organization that handles the needs of its citizens like health care, financial assistance, and
-            certification.</p>
-    </div>
-    <div class="prev">
-        <p>Previous Event</p>
-    </div>
-    <div class="tree">
-        <p>Tree Planting <br> 01/01/23</p>
-    </div>
-    <div class="blood">
-        <p>Blood Donation <br> 04/30/23</p>
-    </div>
-    <div class="fiesta">
-        <p>Barangay Fiesta <br> 01/04/23</p>
-    </div>
-    <div class="feed">
-        <p>Feeding Program <br> 06/05/23</p>
-    </div>
-    <div class="bonifaciopic"> <img src="images/bonifacio.jpg" alt="" width="250" height="150">
-    </div>
-    <div class="treepic"> <img src="images/Treeplanting2.jpg" alt="" width="200" height="100">
-    </div>
-    <div class="fiestapic"> <img src="images/fiesta.jpg" alt="" width="200" height="100">
-    </div>
-    <div class="bloodpic"> <img src="images/blood.jpg" alt="" width="200" height="100">
-    </div>
-    <div class="feedpic"> <img src="images/feed.jpg" alt="" width="200" height="100">
+    <div class="dashboard height-10 mt-4 p-4 pt-5">
+        <div class="p-4">
+            <h2 class="no-span"><span>Barangay Information</span></h2>
+        </div>
+        <div class="about w-100 d-flex p-4 gap-4 align-items-center justify-content-center">
+            <img src="images/bonifacio.jpg" alt="" width="250" height="150">
+            <p class="w-50">Barangay Bonifacio is located in San Fernando, Camarines Sur, Philippines. It is a government
+                organization that handles the needs of its citizens like health care, financial assistance, and
+                certification.</p>
+        </div>
+        <div class="upcoming-event-container">
+            <h3>Previous Event</h3>
+            <div class="upcoming-event-list">
+                <div class="image-container">
+                    <div class="description">
+                        <h5>Town Fiesta</h5>
+                        <p class="date">07/21/2023</p>
+                    </div>
+                    <img src="images/fiesta.jpg" alt="tree Planting">
+                </div>
+                <div class="image-container">
+                    <div class="description">
+                        <h5>Feeding Program</h5>
+                        <p class="date">08/23/2023</p>
+                    </div>
+                    <img src="images/feed.jpg" alt="tree Planting">
+                </div>
+                <div class="image-container">
+                    <div class="description">
+                        <h5>Tree Planting</h5>
+                        <p class="date">08/30/2023</p>
+                    </div>
+                    <img src="images/Treeplanting2.jpg" alt="tree Planting">
+                </div>
+                <div class="image-container">
+                    <div class="description">
+                        <h5>Bloodletting</h5>
+                        <p class="date">10/20/2023</p>
+                    </div>
+                    <img src="images/blood.jpg" alt="tree Planting">
+                </div>
+            </div>
+        </div>
     </div>
     <!--Contanier end-->
 </body>
@@ -142,18 +153,18 @@
             }
         }
 
-        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
 
         /*===== LINK ACTIVE =====*/
-        const linkColor = document.querySelectorAll('.nav_link')
+        const linkColor = document.querySelectorAll('.nav_link');
 
         function colorLink() {
             if (linkColor) {
-                linkColor.forEach(l => l.classList.remove('active'))
-                this.classList.add('active')
+                linkColor.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
             }
         }
-        linkColor.forEach(l => l.addEventListener('click', colorLink))
+        linkColor.forEach(l => l.addEventListener('click', colorLink));
     });
 </script>
 
