@@ -63,7 +63,6 @@
     box-shadow: 0 0 1rem #00000060;
     border-radius: 1rem;
     padding: 1rem 3rem;
-    margin: 1rem 0;
 }
 
 .upcoming-event-list {
@@ -103,7 +102,7 @@
     box-shadow: 0 0 1rem #00000060;
     border-radius: 1rem;
     padding: 1rem 3rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .transaction-container .table-responsive {
