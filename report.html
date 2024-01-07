@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="icon" href="images/image1.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle d-flex">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+        <div class="d-flex align-items-center justify-content-between gap-5">
+            <div class="w-100 d-flex align-content-center gap-4 justify-content-end">
+                <a class="d-flex align-items-center icon-text"
+                    href="https://mail.google.com/mail/u/1/#inbox?compose=jrjtXDxrRmkcgTmqpQmzqqLbdbhvxZzkBRpznhpnWhHXZhfmbZNKDKSqWxjBrQFCBdvTjvjq"
+                    target="_blank">
+                    <i class='bx bxl-gmail icon-logo'></i>Gmail</a>
+                <a class="d-flex align-items-center icon-text" href="https://web.facebook.com/barangay.bonifacio.35"
+                    target="_blank">
+                    <i class="bx bxl-facebook-circle icon-logo"></i>Facebook</a>
+            </div>
+        </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav_logo-header">
+                    <img src="images/image1.png" alt="">
+                    <span class="nav_logo-name">Barangay Bonifacio</span>
+                </div>
+                <div class="nav_list">
+                    <a href="dashboard.html" class="nav_link">
+                        <i class='bx bxs-home'></i>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+
+                    <a href="binfo.html" class="nav_link">
+                        <i class='bx bxs-buildings'></i>
+                        <span class="nav_name">Barangay Information</span>
+                    </a>
+
+                    <a href="bofficial.html" class="nav_link">
+                        <i class='bx bxs-user-rectangle'></i>
+                        <span class="nav_name">Barangay Officials</span>
+                    </a>
+                    <hr>
+                    <a href="setApp.html" class="nav_link">
+                        <i class='bx bxs-calendar'></i>
+                        <span class="nav_name">Set Appointments</span>
+                    </a>
+
+                    <a href="requestDocument.html" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Request Document</span>
+                    </a>
+
+                    <a href="report.html" class="nav_link active">
+                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Reports</span>
+                    </a>
+                    <hr>
+                    <a href="log-in.html" class="nav_link">
+                        <i class='bx bx-log-out nav_icon'></i>
+                        <span class="nav_name">Log Out</span> 
+                    </a>
+                </div>
+                <div class="header-user-img nav_logo-header">
+                    <img src="images/365445071_2248707731993216_6634386383644775691_n.jpg" alt="profile">
+                    <span class="nav_logo-name">Jovel</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Container start-->
+    <div class="mt-4 p-4 pt-5">
+        <div class="p-4">
+            <h2 class="no-span"><span>Report</span></h2>
+        </div>
+        <div id="HeaderReport" class="pt-3 pb-5">
+            <h4>Fill the form below and we will get back soon to you for more update.</h4>
+        </div>
+        <form id="FormReport" class="row needs-validation" novalidate>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="IputNameReport" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="IputNameReport" placeholder="Full Name" required>
+                    <div class="invalid-feedback">Please enter your name</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="DocumentTypeReport" class="form-label">Report Type</label>
+                    <select id="DocumentTypeReport" class="form-select" aria-label="Default select example" required>
+                        <option disabled selected>Select Document Type</option>
+                        <option value="1">Blotter</option>
+                        <option value="2">Infrastructural Report</option>
+                        <option value="3">Utility Report</option>
+                        <option value="4">Others</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a document type</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="InputNumberReport" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="InputNumberReport" pattern="^(09|\+639)\d{9}$" placeholder="+63" required>
+                    <div class="invalid-feedback">Please enter your phone number</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="InputEmailReport" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmailReport" placeholder="name@example.com"
+                        required>
+                    <div class="invalid-feedback">Please enter your email</div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="TextareaReport" class="form-label">Reason</label>
+                    <textarea class="form-control" id="TextareaReport" rows="3" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!--Contanier end-->
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+            const toggle = document.getElementById(toggleId),
+                nav = document.getElementById(navId),
+                bodypd = document.getElementById(bodyId),
+                headerpd = document.getElementById(headerId)
+
+            // Validate that all variables exist
+            if (toggle && nav && bodypd && headerpd) {
+                toggle.addEventListener('click', () => {
+                    // show navbar
+                    nav.classList.toggle('show')
+                    // change icon
+                    toggle.classList.toggle('bx-x')
+                    // add padding to body
+                    bodypd.classList.toggle('body-pd')
+                    // add padding to header
+                    headerpd.classList.toggle('body-pd')
+                })
+            }
+        }
+
+        showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+        /*===== LINK ACTIVE =====*/
+        const linkColor = document.querySelectorAll('.nav_link')
+
+        function colorLink() {
+            if (linkColor) {
+                linkColor.forEach(l => l.classList.remove('active'))
+                this.classList.add('active')
+            }
+        }
+        linkColor.forEach(l => l.addEventListener('click', colorLink))
+    });
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+</html>

@@ -1,0 +1,160 @@
+:root {
+    --header-height: 3rem;
+    --nav-width: 4.2rem;
+    --first-color: #3a53a5;
+    --first-color-light: #afa5d9;
+    --white-color: #f7f6fb;
+    --bg-color: #f4f4f4;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.header-main h2 {
+    padding: 0 2rem;
+    font-weight: bold;
+}
+
+.header-main hr {
+    width: 100%;
+}
+
+.dashboard.height-100.bg-light.mt-5 {
+    margin-top: 6rem !important;
+}
+
+.dashboard {
+    background-color: transparent;
+}
+
+.dashboard hr {
+    opacity: 100%;
+    border-radius: 10px;
+    border: #000 solid 0.1em;
+}
+
+.upcoming-event-list {
+    display: flex;
+}
+
+.claimed {
+    color: green;
+}
+
+.pending {
+    color: red;
+}
+
+.upcoming-event-container {
+    background-color: var(--white-color);
+    box-shadow: 0 0 1rem #00000060;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+}
+
+.upcoming-event-list {
+    gap: 2rem;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+
+.upcoming-event-container h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.upcoming-event-container .image-container {
+    position: relative;
+}
+
+.upcoming-event-container img {
+    border-radius: 1rem;
+    width: calc(1920px / 8);
+    height: calc(1080px / 7);
+    object-fit: cover;
+}
+
+.upcoming-event-container .image-container div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1rem;
+    color: var(--white-color);
+    background-image: linear-gradient(transparent, black);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.transaction-container {
+    background-color: var(--white-color);
+    box-shadow: 0 0 1rem #00000060;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+}
+
+.transaction-container .table-responsive {
+    width: 100%;
+    height: 15rem;
+    overflow: auto;
+}
+
+.transaction-container h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-main h2 {
+        font-size: 1.4rem;
+    }
+
+    .upcoming-event-container {
+        padding: 1rem 2rem;
+    }
+
+    .upcoming-event-container img {
+        border-radius: 1rem;
+        width: calc(1920px / 10);
+        height: calc(1080px / 10);
+        object-fit: cover;
+    }
+
+    .upcoming-event-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .upcoming-event-container .image-container .description h5,
+    p {
+        font-size: 0.8rem;
+    }
+
+    .transaction-container {
+        padding: 1rem 2rem;
+    }
+
+    .transaction-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .transaction-container .table-responsive {
+        height: 15rem;
+    }
+
+    .transaction-container .table-responsive table{
+        font-size: .7rem;
+    }
+}
